@@ -2,17 +2,25 @@
 <idea-plugin>
     <id>com.github.tesquo.expplugin</id>
     <name>EXP_Plugin</name>
+    <version>0.0.1</version>
+    <idea-version since-build="243.22562.145"/>
     <vendor>tesquo</vendor>
+    <description>Provides Extreme Programming feedback for active codebases</description>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.tesquo.expplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <localInspection language="JAVA" shortName="XPEvaluator" displayName="XP Evaluator"
+                         groupPath="My Group" groupName="My Group"
+                         implementationClass="com.github.tesquo.expplugin.inspectors.codeInspector"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.tesquo.expplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="com.github.tesquo.expplugin.listeners.RunPlugin"
+                class="com.github.tesquo.expplugin.listeners.RunPlugin"
+                text="Run Plugin"
+                description="Run the plugin on the current file">
+                <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>

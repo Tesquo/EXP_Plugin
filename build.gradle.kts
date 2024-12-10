@@ -133,6 +133,10 @@ tasks {
     publishPlugin {
         dependsOn(patchChangelog)
     }
+    register<Jar>("pluginJar") {
+        from(sourceSets.main.get().output)
+        archiveFileName.set("your-plugin-name.jar")
+        destinationDirectory.set(layout.buildDirectory.dir("libs")) }
 }
 
 intellijPlatformTesting {
