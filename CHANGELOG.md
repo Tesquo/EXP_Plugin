@@ -4,4 +4,7 @@
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Updated to version 0.0.2
+- Updated to remove scores if they're not a negative value
+- Added a new description
+- Added a new changelog

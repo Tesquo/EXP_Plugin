@@ -28,7 +28,7 @@ public class ClassChecker {
                 }
                 if (index < start) {
                     if (line.toLowerCase().startsWith("import")) {
-                        scores.add(new Score(0,"Import at top of the class", index));
+                        //scores.add(new Score(0,"Import at top of the class", index));
                         System.out.println(index);
                     }
                 }

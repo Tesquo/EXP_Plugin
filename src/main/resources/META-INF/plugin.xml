@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.tesquo.expplugin</id>
     <name>EXP_Plugin</name>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <idea-version since-build="243.22562.145"/>
     <vendor>tesquo</vendor>
     <description>Provides Extreme Programming feedback for active codebases</description>
@@ -12,7 +12,7 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
     <extensions defaultExtensionNs="com.intellij">
         <localInspection language="JAVA" shortName="XPEvaluator" displayName="XP Evaluator"
-                         groupPath="My Group" groupName="My Group"
+                         groupPath="XP Evaluator" groupName="XP Evaluator"
                          implementationClass="com.github.tesquo.expplugin.inspectors.codeInspector"/>
     </extensions>
     <actions>
