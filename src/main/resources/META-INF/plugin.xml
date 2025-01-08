@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.tesquo.expplugin</id>
-    <name>EXP_Plugin</name>
+    <name>EXP Evaluator</name>
     <version>0.0.2</version>
     <idea-version since-build="243.22562.145"/>
     <vendor>tesquo</vendor>
